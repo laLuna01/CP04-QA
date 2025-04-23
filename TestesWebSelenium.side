@@ -1,0 +1,576 @@
+{
+  "id": "d0f3af18-bb8d-4341-b34e-39abb1595e0f",
+  "version": "2.0",
+  "name": "CP04-QA",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "03bb7452-ebfb-44c6-9b53-25a1669840b2",
+    "name": "Teste CRUD",
+    "commands": [{
+      "id": "f556bde3-d31e-4096-ab13-82b43328602d",
+      "comment": "",
+      "command": "open",
+      "target": "/consulta/lista",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "184239a2-c56d-4e57-92af-e8caa6e37d3d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1030",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93686435-fcd9-40ac-80dc-e77495657f9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gap-2:nth-child(1)",
+      "targets": [
+        ["css=.gap-2:nth-child(1)", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar Nova Consulta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c74f3eb-903f-476a-8594-c7bedded5fe9",
+      "comment": "",
+      "command": "click",
+      "target": "id=data",
+      "targets": [
+        ["id=data", "id"],
+        ["name=dataConsulta", "name"],
+        ["css=#data", "css:finder"],
+        ["xpath=//input[@id='data']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "659aa16d-00ad-4adb-805f-2293588090c1",
+      "comment": "",
+      "command": "type",
+      "target": "id=data",
+      "targets": [
+        ["id=data", "id"],
+        ["name=dataConsulta", "name"],
+        ["css=#data", "css:finder"],
+        ["xpath=//input[@id='data']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "12/02/2021"
+    }, {
+      "id": "d1e69cb6-6517-42e7-8330-53bca5ccf0a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo",
+      "targets": [
+        ["id=tipo", "id"],
+        ["name=tipoConsulta", "name"],
+        ["css=#tipo", "css:finder"],
+        ["xpath=//input[@id='tipo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db5205f9-6417-44c8-8a73-cd26e58b5153",
+      "comment": "",
+      "command": "type",
+      "target": "id=tipo",
+      "targets": [
+        ["id=tipo", "id"],
+        ["name=tipoConsulta", "name"],
+        ["css=#tipo", "css:finder"],
+        ["xpath=//input[@id='tipo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "avaliação"
+    }, {
+      "id": "d72f8abd-a701-4a83-bde0-b71398c9b339",
+      "comment": "",
+      "command": "click",
+      "target": "id=custo",
+      "targets": [
+        ["id=custo", "id"],
+        ["name=custo", "name"],
+        ["css=#custo", "css:finder"],
+        ["xpath=//input[@id='custo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fe6392d-5b07-455e-9c9f-e97a896c4c1e",
+      "comment": "",
+      "command": "type",
+      "target": "id=custo",
+      "targets": [
+        ["id=custo", "id"],
+        ["name=custo", "name"],
+        ["css=#custo", "css:finder"],
+        ["xpath=//input[@id='custo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "23"
+    }, {
+      "id": "39af554c-5aea-4e6b-94e0-2d859fd7cc9b",
+      "comment": "",
+      "command": "click",
+      "target": "id=status",
+      "targets": [
+        ["id=status", "id"],
+        ["name=statusSinistro", "name"],
+        ["css=#status", "css:finder"],
+        ["xpath=//input[@id='status']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0de870f8-ee88-4268-922c-5f31e4913cdc",
+      "comment": "",
+      "command": "type",
+      "target": "id=status",
+      "targets": [
+        ["id=status", "id"],
+        ["name=statusSinistro", "name"],
+        ["css=#status", "css:finder"],
+        ["xpath=//input[@id='status']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "aprovado"
+    }, {
+      "id": "d0206663-991f-4be9-84bd-99da8be597df",
+      "comment": "",
+      "command": "click",
+      "target": "id=paciente",
+      "targets": [
+        ["id=paciente", "id"],
+        ["name=paciente", "name"],
+        ["css=#paciente", "css:finder"],
+        ["xpath=//input[@id='paciente']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "182ab074-8587-467b-a8a6-a09eb7ce71a8",
+      "comment": "",
+      "command": "type",
+      "target": "id=paciente",
+      "targets": [
+        ["id=paciente", "id"],
+        ["name=paciente", "name"],
+        ["css=#paciente", "css:finder"],
+        ["xpath=//input[@id='paciente']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "d6c57cea-a0d6-41f6-a10e-4970715c5f82",
+      "comment": "",
+      "command": "click",
+      "target": "id=dentista",
+      "targets": [
+        ["id=dentista", "id"],
+        ["name=dentista", "name"],
+        ["css=#dentista", "css:finder"],
+        ["xpath=//input[@id='dentista']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9adc9421-e58a-4108-8768-3ccf15b3fa72",
+      "comment": "",
+      "command": "type",
+      "target": "id=dentista",
+      "targets": [
+        ["id=dentista", "id"],
+        ["name=dentista", "name"],
+        ["css=#dentista", "css:finder"],
+        ["xpath=//input[@id='dentista']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "aad47d74-b0fa-4b6c-abe4-29b5a666b3f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Cadastrar']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "738e1776-ceab-4fbd-9568-a9d82e480519",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(12) .btn-success",
+      "targets": [
+        ["css=tr:nth-child(12) .btn-success", "css:finder"],
+        ["xpath=(//button[@type='button'])[23]", "xpath:attributes"],
+        ["xpath=//tr[12]/td[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92394aa1-7692-4354-97b0-12573da7e2ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=editData",
+      "targets": [
+        ["id=editData", "id"],
+        ["name=dataConsulta", "name"],
+        ["css=#editData", "css:finder"],
+        ["xpath=//input[@id='editData']", "xpath:attributes"],
+        ["xpath=//form[@id='editForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76a76e1a-9533-40c5-b43f-288f1188d6fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=editData",
+      "targets": [
+        ["id=editData", "id"],
+        ["name=dataConsulta", "name"],
+        ["css=#editData", "css:finder"],
+        ["xpath=//input[@id='editData']", "xpath:attributes"],
+        ["xpath=//form[@id='editForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "12/02/2025"
+    }, {
+      "id": "950ee706-c870-4a6f-9071-cb590b101e83",
+      "comment": "",
+      "command": "click",
+      "target": "id=editCusto",
+      "targets": [
+        ["id=editCusto", "id"],
+        ["name=custo", "name"],
+        ["css=#editCusto", "css:finder"],
+        ["xpath=//input[@id='editCusto']", "xpath:attributes"],
+        ["xpath=//form[@id='editForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16754a6a-a8ed-4ad5-9f80-ffec23e99fb9",
+      "comment": "",
+      "command": "type",
+      "target": "id=editCusto",
+      "targets": [
+        ["id=editCusto", "id"],
+        ["name=custo", "name"],
+        ["css=#editCusto", "css:finder"],
+        ["xpath=//input[@id='editCusto']", "xpath:attributes"],
+        ["xpath=//form[@id='editForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "28.0"
+    }, {
+      "id": "dfdbaf95-3b6b-4ca3-bd9a-0a228d47b81c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > .btn-primary",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='editForm']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Atualizar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b316bd10-3834-4be6-99ad-127d71f1796c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(12) .btn-danger",
+      "targets": [
+        ["css=tr:nth-child(12) .btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[24]", "xpath:attributes"],
+        ["xpath=//tr[12]/td[8]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b237a19-0b38-426e-9097-9e188b1e0fbc",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirmDeleteButton",
+      "targets": [
+        ["id=confirmDeleteButton", "id"],
+        ["css=#confirmDeleteButton", "css:finder"],
+        ["xpath=//button[@id='confirmDeleteButton']", "xpath:attributes"],
+        ["xpath=//div[@id='deleteModal']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sim, excluir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3d0c9ad-5552-4314-a3de-a5a2f43ec368",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sinistros",
+      "targets": [
+        ["linkText=Sinistros", "linkText"],
+        ["css=.active > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sinistros')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/sinistro/lista')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sinistros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30231a92-62f8-4994-8eb7-d8c3700d89a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gap-2:nth-child(1)",
+      "targets": [
+        ["css=.gap-2:nth-child(1)", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar Novo Sinistro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e41251cd-4439-447d-a80c-cbf157e3a8cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=motivo",
+      "targets": [
+        ["id=motivo", "id"],
+        ["name=motivoSinistro", "name"],
+        ["css=#motivo", "css:finder"],
+        ["xpath=//input[@id='motivo']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a40cf98-bb76-4992-acf6-0a164dd03140",
+      "comment": "",
+      "command": "type",
+      "target": "id=motivo",
+      "targets": [
+        ["id=motivo", "id"],
+        ["name=motivoSinistro", "name"],
+        ["css=#motivo", "css:finder"],
+        ["xpath=//input[@id='motivo']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "quebrei os dente"
+    }, {
+      "id": "0421ac1d-1688-414e-bac0-44f431c0e9a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=data",
+      "targets": [
+        ["id=data", "id"],
+        ["name=dataAbertura", "name"],
+        ["css=#data", "css:finder"],
+        ["xpath=//input[@id='data']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cd2e12d-1d4a-4ac7-9b62-edb7f1fc2bc7",
+      "comment": "",
+      "command": "type",
+      "target": "id=data",
+      "targets": [
+        ["id=data", "id"],
+        ["name=dataAbertura", "name"],
+        ["css=#data", "css:finder"],
+        ["xpath=//input[@id='data']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "27/04/2025"
+    }, {
+      "id": "bc2cee56-48b8-4db5-a186-efeaa5f02228",
+      "comment": "",
+      "command": "click",
+      "target": "id=status",
+      "targets": [
+        ["id=status", "id"],
+        ["name=statusSinistro", "name"],
+        ["css=#status", "css:finder"],
+        ["xpath=//input[@id='status']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b814d4cd-a806-4764-b4bd-5828ce2d4c9b",
+      "comment": "",
+      "command": "type",
+      "target": "id=status",
+      "targets": [
+        ["id=status", "id"],
+        ["name=statusSinistro", "name"],
+        ["css=#status", "css:finder"],
+        ["xpath=//input[@id='status']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "recusado"
+    }, {
+      "id": "27ed847a-0b8a-42ae-866d-86dfb04e1232",
+      "comment": "",
+      "command": "click",
+      "target": "id=consulta",
+      "targets": [
+        ["id=consulta", "id"],
+        ["name=consulta", "name"],
+        ["css=#consulta", "css:finder"],
+        ["xpath=//input[@id='consulta']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76e1a040-cb14-49db-ae4f-e2e5a99ff560",
+      "comment": "",
+      "command": "type",
+      "target": "id=consulta",
+      "targets": [
+        ["id=consulta", "id"],
+        ["name=consulta", "name"],
+        ["css=#consulta", "css:finder"],
+        ["xpath=//input[@id='consulta']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "d91f730a-542d-45d2-8754-2107bca4f709",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Cadastrar']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cfaafdb-7aa4-4f1a-9a3b-416a4d6cb7c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .btn-success",
+      "targets": [
+        ["css=tr:nth-child(4) .btn-success", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//tr[4]/td[6]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4bd7cb7-d15a-4b9a-94e5-1f04dfe6cf81",
+      "comment": "",
+      "command": "click",
+      "target": "id=editStatus",
+      "targets": [
+        ["id=editStatus", "id"],
+        ["name=statusSinistro", "name"],
+        ["css=#editStatus", "css:finder"],
+        ["xpath=//input[@id='editStatus']", "xpath:attributes"],
+        ["xpath=//form[@id='editForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b22d577a-b8bf-499e-a109-39ab8430ea5d",
+      "comment": "",
+      "command": "click",
+      "target": "id=editStatus",
+      "targets": [
+        ["id=editStatus", "id"],
+        ["name=statusSinistro", "name"],
+        ["css=#editStatus", "css:finder"],
+        ["xpath=//input[@id='editStatus']", "xpath:attributes"],
+        ["xpath=//form[@id='editForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19bf2f8a-e0d4-42e9-a824-3053f1fc58c3",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=editStatus",
+      "targets": [
+        ["id=editStatus", "id"],
+        ["name=statusSinistro", "name"],
+        ["css=#editStatus", "css:finder"],
+        ["xpath=//input[@id='editStatus']", "xpath:attributes"],
+        ["xpath=//form[@id='editForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49fee2b9-5278-4709-9c49-29a0729ffb25",
+      "comment": "",
+      "command": "type",
+      "target": "id=editStatus",
+      "targets": [
+        ["id=editStatus", "id"],
+        ["name=statusSinistro", "name"],
+        ["css=#editStatus", "css:finder"],
+        ["xpath=//input[@id='editStatus']", "xpath:attributes"],
+        ["xpath=//form[@id='editForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "em analise"
+    }, {
+      "id": "45ba30a3-cfc9-4638-839c-7e575a58aed3",
+      "comment": "",
+      "command": "click",
+      "target": "id=editForm",
+      "targets": [
+        ["id=editForm", "id"],
+        ["css=#editForm", "css:finder"],
+        ["xpath=//form[@id='editForm']", "xpath:attributes"],
+        ["xpath=//div[@id='editModal']/div/div[2]/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2b397a3-8c63-483d-9534-a8ce1d4f05f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > .btn-primary",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='editForm']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Atualizar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e8171e6-8763-411d-afab-d5485373e59b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .btn-danger",
+      "targets": [
+        ["css=tr:nth-child(4) .btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//tr[4]/td[6]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7484b163-d19a-4c55-80f0-ebc51e06accb",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirmDeleteButton",
+      "targets": [
+        ["id=confirmDeleteButton", "id"],
+        ["css=#confirmDeleteButton", "css:finder"],
+        ["xpath=//button[@id='confirmDeleteButton']", "xpath:attributes"],
+        ["xpath=//div[@id='deleteModal']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sim, excluir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "54828d14-c629-4446-a7d7-47e57cfc68fb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["03bb7452-ebfb-44c6-9b53-25a1669840b2"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
